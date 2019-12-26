@@ -48,14 +48,14 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbFilters = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
+            this.rbtnAsc = new System.Windows.Forms.RadioButton();
+            this.rbtnDsc = new System.Windows.Forms.RadioButton();
+            this.btnFilter = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -198,8 +198,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btnAddNew);
             this.panel2.Controls.Add(this.btnFind);
             this.panel2.Location = new System.Drawing.Point(368, 12);
@@ -241,43 +241,43 @@
             this.dataGridView1.Size = new System.Drawing.Size(509, 231);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(3, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(3, 35);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(84, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(84, 35);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.radioButton2);
-            this.panel4.Controls.Add(this.radioButton1);
+            this.panel4.Controls.Add(this.btnFilter);
+            this.panel4.Controls.Add(this.rbtnDsc);
+            this.panel4.Controls.Add(this.rbtnAsc);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.comboBox1);
+            this.panel4.Controls.Add(this.cbFilters);
             this.panel4.Location = new System.Drawing.Point(368, 83);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(163, 112);
             this.panel4.TabIndex = 3;
             // 
-            // comboBox1
+            // cbFilters
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(156, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbFilters.FormattingEnabled = true;
+            this.cbFilters.Location = new System.Drawing.Point(3, 49);
+            this.cbFilters.Name = "cbFilters";
+            this.cbFilters.Size = new System.Drawing.Size(156, 21);
+            this.cbFilters.TabIndex = 0;
             // 
             // label8
             // 
@@ -288,36 +288,36 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Filter by";
             // 
-            // radioButton1
+            // rbtnAsc
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 26);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ASC";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnAsc.AutoSize = true;
+            this.rbtnAsc.Location = new System.Drawing.Point(6, 26);
+            this.rbtnAsc.Name = "rbtnAsc";
+            this.rbtnAsc.Size = new System.Drawing.Size(46, 17);
+            this.rbtnAsc.TabIndex = 2;
+            this.rbtnAsc.TabStop = true;
+            this.rbtnAsc.Text = "ASC";
+            this.rbtnAsc.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtnDsc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(77, 26);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "DSC";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnDsc.AutoSize = true;
+            this.rbtnDsc.Location = new System.Drawing.Point(77, 26);
+            this.rbtnDsc.Name = "rbtnDsc";
+            this.rbtnDsc.Size = new System.Drawing.Size(47, 17);
+            this.rbtnDsc.TabIndex = 3;
+            this.rbtnDsc.TabStop = true;
+            this.rbtnDsc.Text = "DSC";
+            this.rbtnDsc.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnFilter
             // 
-            this.button3.Location = new System.Drawing.Point(49, 76);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnFilter.Location = new System.Drawing.Point(49, 81);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 4;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -363,14 +363,14 @@
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.RadioButton rbtnDsc;
+        private System.Windows.Forms.RadioButton rbtnAsc;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbFilters;
     }
 }
 
