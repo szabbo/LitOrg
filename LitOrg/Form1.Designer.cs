@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtboxNmbrOfPages = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtboxBinding = new System.Windows.Forms.TextBox();
+            this.txtboxPublisher = new System.Windows.Forms.TextBox();
+            this.txtboxYearOI = new System.Windows.Forms.TextBox();
+            this.txtboxISBN = new System.Windows.Forms.TextBox();
+            this.txtboxTitle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtboxAuthor = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnFind = new System.Windows.Forms.Button();
@@ -65,31 +65,31 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.txtboxNmbrOfPages);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtboxBinding);
+            this.panel1.Controls.Add(this.txtboxPublisher);
+            this.panel1.Controls.Add(this.txtboxYearOI);
+            this.panel1.Controls.Add(this.txtboxISBN);
+            this.panel1.Controls.Add(this.txtboxTitle);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtboxAuthor);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 183);
             this.panel1.TabIndex = 0;
             // 
-            // textBox7
+            // txtboxNmbrOfPages
             // 
-            this.textBox7.Location = new System.Drawing.Point(114, 159);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(231, 20);
-            this.textBox7.TabIndex = 12;
+            this.txtboxNmbrOfPages.Location = new System.Drawing.Point(114, 159);
+            this.txtboxNmbrOfPages.Name = "txtboxNmbrOfPages";
+            this.txtboxNmbrOfPages.Size = new System.Drawing.Size(231, 20);
+            this.txtboxNmbrOfPages.TabIndex = 12;
             // 
             // label7
             // 
@@ -100,40 +100,40 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Number of Pages";
             // 
-            // textBox6
+            // txtboxBinding
             // 
-            this.textBox6.Location = new System.Drawing.Point(114, 133);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(231, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtboxBinding.Location = new System.Drawing.Point(114, 133);
+            this.txtboxBinding.Name = "txtboxBinding";
+            this.txtboxBinding.Size = new System.Drawing.Size(231, 20);
+            this.txtboxBinding.TabIndex = 10;
             // 
-            // textBox5
+            // txtboxPublisher
             // 
-            this.textBox5.Location = new System.Drawing.Point(114, 107);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(231, 20);
-            this.textBox5.TabIndex = 9;
+            this.txtboxPublisher.Location = new System.Drawing.Point(114, 107);
+            this.txtboxPublisher.Name = "txtboxPublisher";
+            this.txtboxPublisher.Size = new System.Drawing.Size(231, 20);
+            this.txtboxPublisher.TabIndex = 9;
             // 
-            // textBox4
+            // txtboxYearOI
             // 
-            this.textBox4.Location = new System.Drawing.Point(114, 81);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(231, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtboxYearOI.Location = new System.Drawing.Point(114, 81);
+            this.txtboxYearOI.Name = "txtboxYearOI";
+            this.txtboxYearOI.Size = new System.Drawing.Size(231, 20);
+            this.txtboxYearOI.TabIndex = 8;
             // 
-            // textBox3
+            // txtboxISBN
             // 
-            this.textBox3.Location = new System.Drawing.Point(114, 55);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(231, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtboxISBN.Location = new System.Drawing.Point(114, 55);
+            this.txtboxISBN.Name = "txtboxISBN";
+            this.txtboxISBN.Size = new System.Drawing.Size(231, 20);
+            this.txtboxISBN.TabIndex = 7;
             // 
-            // textBox2
+            // txtboxTitle
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtboxTitle.Location = new System.Drawing.Point(114, 29);
+            this.txtboxTitle.Name = "txtboxTitle";
+            this.txtboxTitle.Size = new System.Drawing.Size(231, 20);
+            this.txtboxTitle.TabIndex = 1;
             // 
             // label6
             // 
@@ -189,12 +189,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Author";
             // 
-            // textBox1
+            // txtboxAuthor
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtboxAuthor.Location = new System.Drawing.Point(114, 3);
+            this.txtboxAuthor.Name = "txtboxAuthor";
+            this.txtboxAuthor.Size = new System.Drawing.Size(231, 20);
+            this.txtboxAuthor.TabIndex = 0;
             // 
             // panel2
             // 
@@ -344,20 +344,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtboxNmbrOfPages;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtboxBinding;
+        private System.Windows.Forms.TextBox txtboxPublisher;
+        private System.Windows.Forms.TextBox txtboxYearOI;
+        private System.Windows.Forms.TextBox txtboxISBN;
+        private System.Windows.Forms.TextBox txtboxTitle;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtboxAuthor;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAddNew;
         private System.Windows.Forms.Button btnFind;
