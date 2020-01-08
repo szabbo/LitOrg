@@ -1,0 +1,10 @@
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\bin\Debug\LitOrg.exe.config
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\bin\Debug\LitOrg.exe
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\bin\Debug\LitOrg.pdb
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.csprojAssemblyReference.cache
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.Form1.resources
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.Properties.Resources.resources
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.csproj.GenerateResource.cache
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.csproj.CoreCompileInputs.cache
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.exe
+D:\Fax\osiguranjeKakvoceProgramskePodrske\Projekt\newPull\LitOrg\LitOrg\obj\Debug\LitOrg.pdb

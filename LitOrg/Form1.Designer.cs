@@ -44,18 +44,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxAuthor = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnFind = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.cbFilters = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.rbtnAsc = new System.Windows.Forms.RadioButton();
-            this.rbtnDsc = new System.Windows.Forms.RadioButton();
             this.btnFilter = new System.Windows.Forms.Button();
+            this.rbtnDsc = new System.Windows.Forms.RadioButton();
+            this.rbtnAsc = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cbFilters = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -207,6 +207,26 @@
             this.panel2.Size = new System.Drawing.Size(162, 64);
             this.panel2.TabIndex = 1;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(84, 35);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(3, 35);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // btnAddNew
             // 
             this.btnAddNew.Location = new System.Drawing.Point(3, 6);
@@ -215,6 +235,7 @@
             this.btnAddNew.TabIndex = 1;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnFind
             // 
@@ -224,6 +245,7 @@
             this.btnFind.TabIndex = 0;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // panel3
             // 
@@ -241,24 +263,6 @@
             this.dataGridView.Size = new System.Drawing.Size(509, 231);
             this.dataGridView.TabIndex = 0;
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(3, 35);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(84, 35);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnFilter);
@@ -271,33 +275,15 @@
             this.panel4.Size = new System.Drawing.Size(163, 112);
             this.panel4.TabIndex = 3;
             // 
-            // cbFilters
+            // btnFilter
             // 
-            this.cbFilters.FormattingEnabled = true;
-            this.cbFilters.Location = new System.Drawing.Point(3, 49);
-            this.cbFilters.Name = "cbFilters";
-            this.cbFilters.Size = new System.Drawing.Size(156, 21);
-            this.cbFilters.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Filter by";
-            // 
-            // rbtnAsc
-            // 
-            this.rbtnAsc.AutoSize = true;
-            this.rbtnAsc.Location = new System.Drawing.Point(6, 26);
-            this.rbtnAsc.Name = "rbtnAsc";
-            this.rbtnAsc.Size = new System.Drawing.Size(46, 17);
-            this.rbtnAsc.TabIndex = 2;
-            this.rbtnAsc.TabStop = true;
-            this.rbtnAsc.Text = "ASC";
-            this.rbtnAsc.UseVisualStyleBackColor = true;
+            this.btnFilter.Location = new System.Drawing.Point(49, 81);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 23);
+            this.btnFilter.TabIndex = 4;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // rbtnDsc
             // 
@@ -310,14 +296,39 @@
             this.rbtnDsc.Text = "DSC";
             this.rbtnDsc.UseVisualStyleBackColor = true;
             // 
-            // btnFilter
+            // rbtnAsc
             // 
-            this.btnFilter.Location = new System.Drawing.Point(49, 81);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnFilter.TabIndex = 4;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.UseVisualStyleBackColor = true;
+            this.rbtnAsc.AutoSize = true;
+            this.rbtnAsc.Location = new System.Drawing.Point(6, 26);
+            this.rbtnAsc.Name = "rbtnAsc";
+            this.rbtnAsc.Size = new System.Drawing.Size(46, 17);
+            this.rbtnAsc.TabIndex = 2;
+            this.rbtnAsc.TabStop = true;
+            this.rbtnAsc.Text = "ASC";
+            this.rbtnAsc.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Filter by";
+            // 
+            // cbFilters
+            // 
+            this.cbFilters.FormattingEnabled = true;
+            this.cbFilters.Items.AddRange(new object[] {
+            "Author",
+            "Title",
+            "ISBN",
+            "Year of Issue",
+            "Publisher"});
+            this.cbFilters.Location = new System.Drawing.Point(3, 49);
+            this.cbFilters.Name = "cbFilters";
+            this.cbFilters.Size = new System.Drawing.Size(156, 21);
+            this.cbFilters.TabIndex = 0;
             // 
             // Form1
             // 
@@ -330,6 +341,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
